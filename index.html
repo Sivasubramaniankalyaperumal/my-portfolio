@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https:kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="sivapngimg.jpg" alt="sivasubramanian" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="menu-icon" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Sivasubramanian</span><br>from Vridhachalam</h1>
+            <br>
+            <p>B.Tech  Graduate 2025</p>
+        </div>
+    </div>
+</div>
+<!-- -----------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="siva .jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I’m Sivasubramanian, a B.Tech Information Technology graduate with a strong passion for frontend development and full-stack web applications. I specialize in building responsive, user-friendly interfaces using HTML, CSS, JavaScript, and React.js, and I also have hands-on experience with the MERN stack.</p>
+                <br>
+                <p>I've worked on real-time projects like an EB-bill optimizer and attendance system using face recognition. </p>
+                <br>
+                <p> I'm a quick learner, enthusiastic about solving real-world problems through clean and scalable code. I'm now looking for an opportunity to apply and grow my skills in a professional environment.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>   
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Development</span><br> React JS | JavaScript | HTML | CSS<br> Web interfaces (Highly interested) </li>
+                        <li><span>MERN Stack Development</span><br>React JS | Node JS | Express JS | MongoDB <br>Web Development</li>
+                    </ul>
+                </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021-2024</span><br>B.Tech in  Pavender Bharathidasan College of Engineering and technology | 7.8 CGPA</li>
+                    <li><span>2021</span><br>12th Schooling at st.antony's Matric Hr Sec School | 82%</li>
+                    <li><span>2019</span><br>10th Schooling at st.antony's Matric Hr Sec School | 74% </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------services----------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend Development</h2>
+                <p>"I build interactive and responsive web interfaces using HTML, CSS, JavaScript, and React.js. I focus on delivering seamless user experiences with clean layouts, dynamic components, and mobile-first designs optimized for performance.</p>
+                <a herf="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>MERN Stack Development</h2>
+                <p>I develop full-stack web applications using  React.js, Node.js, Express.js and MongoDB. From building RESTful APIs to managing databases and server logic, I create scalable, end-to-end solutions with secure integration and modern architecture.</p>
+                <a herf="#">Learn more</a>
+            </div>
+            <!-- <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>"App Design" focuses on creating intuitive and visually appealing interfaces for mobile applications. It combines aesthetics with usability to ensure seamless navigation, responsive interactions, and an engaging user experience.</p>
+                <a herf="#">Learn more</a>
+            </div> -->
+        </div>
+    </div>
+ </div>
+ <!-- -----------portfolio----------- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+              <div class="work">
+                <img src="tneb.png">
+                <div class="layer">
+                <h3><b>TN-Electricity Bill Optimizer</b></h3>
+                <p>Calculates monthly bills using Tamil Nadu tariff rules and gives smart energy-saving suggestions.
+                <br>
+                <br><strong>Technologies:</strong> HTML, CSS, JavaScript, React.js  
+                <br><br>
+                <strong>Features:</strong> Real-time calculation, Smart Saver mode, energy-saving tips based on consumption, user-friendly interface.</p><br>
+                <a href="https://tneb-bill-optimizer.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i> View project</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="attentance.jpeg">
+                <div class="layer">
+                    <h3><b>Face Recognition Attendance System</b></h3>
+                    <p>An automated student attendance platform using face recognition via webcam and Wi-Fi-based validation.  
+                    <br><br>
+                    <strong>Technologies:</strong> Python (OpenCV), Django, SQLite, HTML, CSS 
+                    <br><br> 
+                    <strong>Features:</strong> Live face detection, secure student record updates, search and view attendance history, department-wise login access.</p>
+                    <a href="https://github.com/Sivasubramaniankalyaperumal/face-recognition-attendance-system" target="_blank"><i class="fa-solid fa-link"></i> View project</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="portf.png">
+                <div class="layer">
+                <h3>Personal Portfolio Website</h3>
+                <p>A fully responsive personal portfolio showcasing projects, skills, and contact details.  
+                <br><br>
+                <strong>Technologies:</strong> HTML, CSS, JavaScript  
+                <br><br>
+                <strong>Features:</strong> Smooth scroll, hover animation, modern dark UI, mobile-friendly layout, and modular design.</p>
+
+                <a href="https://github.com/Sivasubramaniankalyaperumal/face-recognition-attendance-system" target="_blank"><i class="fa-solid fa-link"></i> View project</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- -----------contact----------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sivaavisop@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9150364742</p>
+                <div class="social-icons">
+                    <a href="http://github.com/Sivasubramaniankalyaperumal"><i class="fa-brands fa-facebook"></i></i>GitHub</a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="http://linkedin.com/in/sivazubramanyan"><i class="fa-brands fa-linkedin"></i></i>Linkedn</a>
+                </div>
+                <a href="resume template.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Messages" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sivasubramanian K. <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+    </div>
+   </div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function openmenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwqdpyTMmOk4fYmLakgz5gBxMG9XMRUAPt_92uOW4WlWV0wM2SzvAvDK7ABB47Bgpi2/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(reponse => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
